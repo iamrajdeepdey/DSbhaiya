@@ -1,70 +1,126 @@
 *{
-    margin: 0;
+    margin: 0%;
     padding: 0;
 }
 body{
-    background-color: rgb(199, 16, 16);
-    width: 100%;
-
+    height: 1555px;
 }
 .heading{
-    background: url(images/header4.jpg);
-    background-position:center;
+    background: url(images/header.jpg);
+    background-position: center 60%;
     background-size: cover;
-    width: 100%;
+    background-repeat: no-repeat;
+    height: 355px;;
 }
-.left{
-    background-color: rgba(255, 255, 255,0.157);
-    font-family:  'Neonderthaw', cursive;
+.head{
+    position: absolute;
+    right: 30%;
+    top: 5%;
+    display: inline-block;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(108, 0, 248);
+    padding-left: 1%;
+}
+ .logo {
+        position: absolute;
+        width: 16%;
+        left: -46px;
+        top: -20%;
+}
+.mid{
+    width:500px;
+    display: inline-block;
+    position:absolute ;
+    text-align: justify;
+    margin-left: 47.5%;
+    margin-top: 8%;
+    font-size: 17px;
+    font-family:Arial, Helvetica;
+    font-weight:700;
     color: rgb(0, 0, 0);
     
 }
-.mid{
-    background-color: rgba(255, 255, 255, 0.157);
-    text-align: center;
-    font-size: 29px;
+em{
+    color: rgb(38, 0, 255);
     font-weight: bolder;
-    color: rgb(0, 0, 0);
-    font-family: 'Yellowtail', cursive;
+    font-style:normal;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .Right{
     position: absolute;
-    right: 5px;
-    top: 5px;
-    background-color: chocolate;
-    padding: 5px;
-    border: double;
-    border-radius: 14px;
+    top: 115%;   
+    border-radius: 15px;
+    padding: 3px;
+    border: white double;
+    background-color: rgb(77, 0, 128);
 }
 .Right a{
-    color: black;
     text-decoration: none;
-    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
 }
 .Right:hover{
-    background-color: green;
+    background-color: rgb(0, 187, 47);
+    border: black double;
+    padding: 4px;
+    transition: 0.2s;
 }
-em1{
- color: rgb(240, 128, 109);
+.left{
+    position: absolute;
+    top: 115%;   
+    right: 25%;
+    border-radius: 15px;
+    padding: 3px;
+    border: white double;
+    background-color: rgb(77, 0, 128);
 }
-em2{
- color: rgb(145, 255, 0);
+.left a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
 }
-em3{
- color: rgb(0, 6, 88);
+.left:hover{
+    background-color: rgb(255, 72, 0);
+    border: black double;
+    padding: 4px;
+    transition:0.2s ;
 }
-em4{
- color: rgb(135, 0, 245);
+nav  {
+    width: 100%;
+    background-color: rgba(108, 0, 248, 0.842);
+    display: inline-block;
+    border-radius: 25px;
+    border-top:rgb(0, 0, 0) solid;
+    border-bottom:rgb(0, 0, 0) solid;
+    position: sticky;
+    top: 0;
 }
 .navbar{
-    margin:0px 50%;
-    display: inline-block;
-    background-color: rgb(232, 255, 232);
-    position:sticky;
-    width: 25%;
+    display: flex;
+    padding: 0 120px;
+    float:right;
 }
 .navbar li{
-    display: inline-block;
-    padding: 3% 3%;
-    padding-left: 5%;
+    padding: 15px 30px;
+    list-style: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: blanchedalmond;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.navbar li a:hover{
+    background-color: #fff;
+    color: blueviolet;
+    transition: 0.2s;
+    border: rgb(89, 0, 255) double 2px;
+    border-radius: 15px;
+    font-size:17px;
+    font-weight: bolder;
 }
