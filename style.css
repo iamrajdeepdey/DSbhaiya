@@ -118,7 +118,7 @@ nav  {
 .navbar li a:hover{
     background-color: #fff;
     color: blueviolet;
-    transition: 0.2s;
+    transition: 0.5s;
     border: rgb(89, 0, 255) double 2px;
     border-radius: 15px;
     font-size:17px;
