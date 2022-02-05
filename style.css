@@ -4,13 +4,14 @@
 }
 body{
     height: 1555px;
+    background-color: #7d2cff70;
 }
 .heading{
     background: url(images/header.jpg);
     background-position: center 60%;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 355px;;
+    height: 355px;
 }
 .head{
     position: absolute;
@@ -89,14 +90,16 @@ em{
     transition:0.2s ;
 }
 nav  {
-    width: 100%;
-    background-color: rgba(108, 0, 248, 0.842);
+    width: 94%;
+    margin-left: 2.5%;
+    background-color: rgb(108, 0, 248);
     display: inline-block;
     border-radius: 25px;
-    border-top:rgb(0, 0, 0) solid;
+    border:rgb(0, 0, 0) solid;
     border-bottom:rgb(0, 0, 0) solid;
     position: sticky;
     top: 0;
+    z-index: 700000;
 }
 .navbar{
     display: flex;
@@ -118,9 +121,242 @@ nav  {
 .navbar li a:hover{
     background-color: #fff;
     color: blueviolet;
-    transition: 0.5s;
+    transition: 0.3s;
     border: rgb(89, 0, 255) double 2px;
     border-radius: 15px;
     font-size:17px;
     font-weight: bolder;
 }
+.box1 {
+    height: 20%;
+    width: 22%;
+    border: 0.01px black solid ;
+    display: inline-block;
+    
+}
+.box2 {
+    width: 22%;
+    height: 20%;
+    border:0.01px  black solid;
+    display: inline-block;
+    
+}
+.box3 {
+    height: 20%;
+    width: 22%;
+    border:0.01px  black solid;
+    display: inline-block;
+    
+}
+.box4 {
+    width: 22%;
+    height: 20%;
+    display: inline-block;
+    border:0.01px  black solid;
+}
+.container{
+    position: relative;
+    text-align: center;
+   
+}
+.content{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    border-radius: 15px;
+    background-color: #fff;
+    margin: 0x 100px 0px 100px;
+    box-shadow: -1em 0 2.4em rgba(0, 0, 0, 0.644), 1em 0 2.4em rgb(0, 0, 0, 0.644);
+}
+.founders .cards{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    width:250px;
+    height: 300px;
+    background: linear-gradient(#8400ffb6, #8e21f3bb 30%, #792af8 30%, #6200ffd0);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.founders .cards .imagebx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    transform-origin: top;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.founders .cards:hover .imagebx{
+    transform: translateY(30px) scale(0.5);
+    border-radius: 20px;
+}
+.founders .cards .imagebx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.founders .cards .information{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.founders .cards:hover .information{
+     transform: translateY(0);
+    }
+.founders .cards .information .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.founders .cards .information .details h3{
+    text-align: center;
+    font-family: cursive ;
+    color: #fff;
+}
+.founders .cards .information .details h3 span{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size:14px;
+    font-weight: bolder;
+}
+.social_icons{
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+.social_icons li{
+    list-style: none;
+    margin :4px;
+    
+}
+.social_icons li a{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6200ff;
+    border-radius: 50%;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.social_icons li a:hover{
+    transform: rotate(360deg) ;
+    background-color: rgb(5, 107, 224);
+}
+.co_founders .cards{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    width:250px;
+    height: 300px;
+    background: linear-gradient(#6b6b6bb6, #6b6b6bb6 30%, #2c2c2ce1 30%, #2c2c2ce1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.co_founders .cards .imagebx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 100000;
+    transform-origin: top;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.co_founders .cards:hover .imagebx{
+    transform: translateY(15px) scale(0.5);
+    border-radius: 20px;
+}
+.co_founders .cards .imagebx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.co_founders .cards .information{
+    position: absolute;
+    top: 180px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 30px;
+    transform: translateY(100%);
+    transition: 0.5s;
+}
+.co_founders .cards:hover .information{
+     transform: translateY(0);
+    }
+.co_founders .cards .information .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.co_founders .cards .information .details h3{
+    text-align: center;
+    font-family: cursive ;
+    color: #fff;
+}
+.co_founders .cards .information .details h3 span{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-size:14px;
+    font-weight: bolder;
+}
+.social_icons2{
+    position: relative;
+    display: flex;
+    margin-top: 5px;
+}
+.social_icons2 li{
+    list-style: none;
+    margin :4px;
+    
+}
+.social_icons2 li a{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f00ff;
+    border-radius: 50%;
+    font-size: 0.8em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.5s;
+}
+.social_icons2 li a:hover{
+    transform: rotate(360deg) ;
+    background-color: rgb(5, 107, 224);
+}
+
+
